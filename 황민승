@@ -1,0 +1,25 @@
+/*[평가항목1]
+컴퓨터프로그래밍 평가과제(배점 25점)
+학과:컴퓨터공학부
+학번:202203820
+이름:황민승
+
+과제 주제:코로나 백신 접종률
+*/
+
+#pragma warning(disable :4996)
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+	FILE* fp = NULL;
+    fp = fopen("백신접종률.txt", "r");
+	if (fp == NULL)
+		printf("파일 열기 실패\n");
+	else
+		printf("파일 열기 성공\n");
+	fclose(fp);
+  
+	return 0;
+}
